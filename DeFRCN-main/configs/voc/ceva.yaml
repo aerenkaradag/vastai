@@ -1,0 +1,35 @@
+_BASE_: "../Base-RCNN.yaml"
+MODEL:
+  WEIGHTS: "/content/drive/MyDrive/TransferL/DeFRCN-main/checkpoints/voc/CEVAT/defrcn_det_r101_base3/model_reset_remove.pth"
+  MASK_ON: False
+  BACKBONE:
+    FREEZE: False
+  RESNETS:
+    DEPTH: 101
+  RPN:
+    ENABLE_DECOUPLE: True
+    BACKWARD_SCALE: 0.0
+    FREEZE: False
+  ROI_HEADS:
+    ENABLE_DECOUPLE: True
+    BACKWARD_SCALE: 0.001
+    NUM_CLASSES: 1
+    FREEZE_FEAT: True
+    CLS_DROPOUT: True
+INPUT:
+  MIN_SIZE_TRAIN: (480, 512, 544, 576, 608, 640, 672, 704, 736, 768, 800)
+  MIN_SIZE_TEST: 10
+DATASETS:
+  TRAIN: ("voc_2007_trainval_all6_1shot_seed0", ) #voc_2007_trainval_all9 for 15+1
+  TEST: ("voc_2007_test_all6",) #voc_2007_test_all9 for 15+1
+SOLVER:
+  IMS_PER_BATCH: 8
+  BASE_LR: 0.01
+  STEPS: (640,)
+  MAX_ITER: 80 #1000 for 15+1
+  CHECKPOINT_PERIOD: 1000 #same as the max_iter
+  WARMUP_ITERS: 0
+TEST:
+  PCB_ENABLE: True #False for wo PCB
+  PCB_MODELPATH: "/content/drive/MyDrive/TransferL/DeFRCN-main/data/pretrain_weights/ImageNetPretrained/torchvision/resnet101-5d3b4d8f.pth"
+OUTPUT_DIR: "/Path/to/Output/Dir"

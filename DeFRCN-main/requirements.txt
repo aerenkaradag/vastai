@@ -1,0 +1,4 @@
+opencv-python
+scikit-learn
+pandas
+pillow==9.5.0
