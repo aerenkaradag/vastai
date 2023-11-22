@@ -39,7 +39,7 @@ run_test() {
     if [[ "$script_name" == "mainistan2.py" && -n "$saved_model" ]]; then
         cmd="$cmd MODEL.WEIGHTS $saved_model"
     else
-        cmd="$cmd MODEL.WEIGHTS /home/vastai/model_reset_remove.pth"
+        cmd="$cmd MODEL.WEIGHTS /home/vastai/DeFRCN-main/gecici/$video/model_final.pth"
     fi
 
     cmd="$cmd TEST.PCB_ENABLE True \

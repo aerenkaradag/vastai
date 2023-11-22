@@ -124,11 +124,11 @@ class OneShotLearning:
         return relations
     def initialize_sample(self):
       sample_images = []
-      img_pth = "datasets/VOC2007/JPEGImages/009975.jpg"
+      img_pth = "/home/vastai/DeFRCN-main/datasets/VOC2007/JPEGImages/009975.jpg"
       sample_image = Image.open(img_pth)
       sample_image = sample_image.convert('RGB')
       
-      bbo = get_bbox("datasets/VOC2007/Annotations/009975.xml", "secondnew")
+      bbo = get_bbox("/home/vastai/DeFRCN-main/datasets/VOC2007/Annotations/009975.xml", "secondnew")
       print(bbo)
       for i in range(5):
         xmin, ymin, xmax, ymax = bbo
