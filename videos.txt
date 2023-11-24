@@ -10,15 +10,9 @@ birds2: https://data.votchallenge.net/sequences/3574eb39b8aa9ff76ef3ae25fb0d5749
 bolt1: https://data.votchallenge.net/sequences/c9c033e485e60859c7bbb61887c7b2b1fdf40e8623c11d3521db70f328fbb6dc1e890961a16f1deea35c94b9ccaf67cf8e252e3e4d69ad6a9508024685212efd.zip
 book: https://data.votchallenge.net/sequences/bcc8ad5017e80ba8bd3412613f2a71e64ed1640d1238673e150fd0a6fed0e53cfabb8794feda064da3ddc6564362f95642bf4c70e5fce89da0c42aed5f571fba.zip
 bubble: https://data.votchallenge.net/sequences/9ed771be2a67b20e061603c46aa56e168e3187c2fde15c084af8dc88888512181635a9396be0080e31edc4836a3977dd50460e3602bbc91bc28929f14b754b2a.zip
-
 butterfly: https://data.votchallenge.net/sequences/bd98076f82f1046520bb4f4bc810bba03c71f4fa73f5b1b4ed3d6b97eef2b7e76d3c8e67126f26453e5a013d200406b1fd0529b515d8e1c0b60f90b42f834465.zip
 car1: https://data.votchallenge.net/sequences/88dfdfb0b261291e5540c6dcd8f358c2881d040bb2f169b2e39624282f34ad015377f47e461da54f1c99c6ecd8fcc86a2e639828d6fa70249b8c77c559c9b718.zip
 conduction1: https://data.votchallenge.net/sequences/3d8065385dff510eb82c2c8890fa823541a62c8f74b667576622f135450fd6535550dcc61648a337c7eb9e8bc3ba3c24ad19e49667ddc4e170f58fd7214f307a.zip
-
-"agility" "animal" "ants1" "bag" "ball2" "ball3" "basketball" "birds1" "birds2" "bolt1" "book" "bubble"
-
-"butterfly" "car1" "conduction1"
-
 crabs1: https://data.votchallenge.net/sequences/10ea12dc20b43ad818b260cfb721ca899560dd7f4e03f2c90a00818cfa0f9d36e061049b6b530232d80eeb02b0bce0b7ea579349002f3612606f413197e054fa.zip
 dinosaur: https://data.votchallenge.net/sequences/c71cc7dff1689c21df85f91032c5d0338670f542731a3cbaa140568619a8a162cf96b043e5df427d71f3d83bfd32bc1af959c86a7761c7e4cf56a521fda9bf8c.zip
 diver: https://data.votchallenge.net/sequences/52fc8c6d7645acbd766985ac95fd058bf945116bc25391a294a6da840910076a22e08125431b17476f3bd33b7b47703f1811a871f2b2c116dda239c94697ac58.zip
@@ -66,13 +60,3 @@ tiger: https://data.votchallenge.net/sequences/3b6b6a1c01b19ffd7a46e1b52fb239217
 wheel: https://data.votchallenge.net/sequences/951c809ad03eea8fd41839666b84cb6ba7f7f74c77863ce61aca56e912fe806560bce21f3ac11f0f8592caa02044ff97e064fafb3c51fd0b75f8eefc02aeadb2.zip
 wiper: https://data.votchallenge.net/sequences/6311f7b051c31083c4d91948f52e4f161b13515c35006fa2f6c994b045eebc6f76ad6be24136fed005f0ac454442bb52429a751ee16af48ec88196efc4031e4c.zip
 zebrafish1: https://data.votchallenge.net/sequences/77028a6105041ca4a6af0c7c24e235172911d5f0d2d50395d2670544f94935de38d7018711595fd47f0e508012981e9fe980d3dec6fda66089e3d6cb59741f65.zip
-
-
-
-
-"crabs1" "dinosaur" "diver" "drone1" "drone_across" "fernando" "fish1" "fish2" "flamingo1" "frisbee" "girl" "graduate" "gymnastics1" "gymnastics2" "gymnastics3" "hand" "hand2" "handball1" "handball2" "helicopter" "iceskater1" "iceskater2" "kangaroo" "lamb" "leaves" "marathon" "matrix" "monkey" "motocross1" "nature" "polo" "rabbit" "rabbit2" "rowing" "shaking" "singer2" "singer3" "snake" "soccer1" "soccer2" "soldier" "surfing" "tennis" "tiger" "wheel" "wiper" "zebrafish1"
-
-
-
-
-

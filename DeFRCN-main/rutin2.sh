@@ -4,7 +4,7 @@
 WORKING_DIR="/home/vastai/DeFRCN-main"
 
 # List of video names to test. Replace this array with your actual list of video names.
-declare -a video_names=("bolt1")
+declare -a video_names=("agility" "animal" "ants1" "bag" "ball2" "ball3" "basketball" "birds1" "birds2" "bolt1" "book" "bubble" "butterfly" "car1" "conduction1" "crabs1" "dinosaur" "diver" "drone1" "drone_across" "fernando" "fish1" "fish2" "flamingo1" "frisbee" "girl" "graduate" "gymnastics1" "gymnastics2" "gymnastics3" "hand" "hand2" "handball1" "handball2" "helicopter" "iceskater1" "iceskater2" "kangaroo" "lamb" "leaves" "marathon" "matrix" "monkey" "motocross1" "nature" "polo" "rabbit" "rabbit2" "rowing" "shaking" "singer2" "singer3" "snake" "soccer1" "soccer2" "soldier" "surfing" "tennis" "tiger" "wheel" "wiper" "zebrafish1")
 
 # Helper function to run the tests
 run_test() {
