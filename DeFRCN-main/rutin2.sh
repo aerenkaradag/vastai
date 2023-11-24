@@ -10,7 +10,7 @@ declare -a video_names=("bolt1")
 run_test() {
     local script_name=$1
     local video_name=$2
-    local interval=$3
+    local interval=$3 # target update interval
     local groundtruth=$4
     local objectness=$5
     local iterations=$6
@@ -39,7 +39,7 @@ run_test() {
     if [[ "$script_name" == "mainistan2.py" && -n "$saved_model" ]]; then
         cmd="$cmd MODEL.WEIGHTS $saved_model"
     else
-        cmd="$cmd MODEL.WEIGHTS /home/vastai/DeFRCN-main/gecici/$video/model_final.pth"
+        cmd="$cmd MODEL.WEIGHTS /home/vastai/model_reset_remove.pth"
     fi
 
     cmd="$cmd TEST.PCB_ENABLE True \
@@ -50,18 +50,13 @@ run_test() {
 
 # Running the tests for each video name
 for video in "${video_names[@]}"; do
-
+    printf "Video: %s\n" "$video"
     cd /home/vastai
     python3 fotocekici.py --custom --count 1 --random True --video $video
-    # # Test 1 with mainistan2.py
-    # short term videolarında 0 + 2 (base+novel)
-    # run_test "mainistan2.py" $video 30000 false false 800 ""
-    # saved_model_path="/home/vastai/DeFRCN-main/gecici/$video/model_final.pth"
-    
-    #### my test
+    # Test 1 with mainistan2.py
+    run_test "mainistan2.py" $video 30000 false false 800 ""
     saved_model_path="/home/vastai/DeFRCN-main/gecici/$video/model_final.pth"
-    run_test "mainistan2.py" $video 3000 true true 800 $saved_model_path
-
+    
     # # Test 2 with mainistan2.py
     # run_test "mainistan2.py" $video 240 true false 800 $saved_model_path
     # # Test 3 with mainistan2.py
@@ -78,6 +73,6 @@ for video in "${video_names[@]}"; do
     # run_test "mainistan.py" $video 240 false true 80 ""
     # Test 9 with mainistan.py
     # run_test "mainistan.py" $video 240 false false 800 ""
-    #T1, T6, T9
+
     #videoda random access, random bi frameden target update ile başlatma ve sona gelmeden durma (belli bir aralıkta çalışma)
 done
